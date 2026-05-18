@@ -5,13 +5,13 @@ import java.sql.*;
 public class DBConnection {
 
     private static final String URL =
-        "jdbc:sqlserver://localhost:1433;databaseName=library_db;encrypt=true;trustServerCertificate=true";
+        "dbc:postgresql://dpg-d85kijmq1p3s73dmisag-a:5432/librarydb";
 
-    private static final String USER = "admin";   
-    private static final String PASSWORD = "12345";
+    private static final String USER = "library";   
+    private static final String PASSWORD = "TDzuWo94ljNzLLpwrGLTu2wS4DK5DIvW";
 
     public static Connection getConnection() throws Exception {
-        Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+        Class.forName("org.postgresql.Driver");
         return DriverManager.getConnection(URL, USER, PASSWORD);
     }
 }
