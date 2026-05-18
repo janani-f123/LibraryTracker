@@ -1,0 +1,57 @@
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee" version="5.0">
+
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.library.servlet.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>RegisterServlet</servlet-name>
+        <servlet-class>com.library.servlet.RegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+        <url-pattern>/register</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AddBookServlet</servlet-name>
+        <servlet-class>com.library.servlet.AddBookServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddBookServlet</servlet-name>
+        <url-pattern>/addBook</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ViewBooksServlet</servlet-name>
+        <servlet-class>com.library.servlet.ViewBooksServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ViewBooksServlet</servlet-name>
+        <url-pattern>/viewBooks</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>StatsServlet</servlet-name>
+        <servlet-class>com.library.servlet.StatsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>StatsServlet</servlet-name>
+        <url-pattern>/stats</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>com.library.servlet.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+
+</web-app>
